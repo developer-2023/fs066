@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style source priority</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {color: red !important;}
+        h1 {color: blue;}
+        /*
+            Priority of CSS sources
+            -----------------------
+            4. User agent stylesheets
+            3. Author stylesheets
+            2. Important author stylesheets (!important)
+            1. Important user settings ("Dark Background and Light Text")
+        */
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+</body>
+</html>
